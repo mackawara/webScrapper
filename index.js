@@ -15,8 +15,7 @@ dbConnect().then(async () => {
     // Launch the browser
     const browser = await puppeteer.launch({
       headless: true,
-      executablePath:
-        "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+      executablePath: "/usr/bin/chromium-browser",
     });
 
     // Create a page
@@ -87,7 +86,7 @@ dbConnect().then(async () => {
           const newSubj = new sylabiModels({
             link: subject.link,
             subjectName: subject.title,
-            filePath: `./assets/sylabi/${subject.fileName}`
+            filePath: `./assets/sylabi/${subject.fileName}`,
           });
           try {
             newSubj.save();
