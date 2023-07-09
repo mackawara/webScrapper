@@ -1,0 +1,27 @@
+{
+  "name": "webscrapper",
+  "version": "1.0.0",
+  "description": "For scraping websites",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mackawara/webScrapper.git"
+  },
+  "author": "mackawara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mackawara/webScrapper/issues"
+  },
+  "homepage": "https://github.com/mackawara/webScrapper#readme",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "mongoose": "^7.3.2",
+    "node-cron": "^3.0.2",
+    "puppeteer": "^20.8.0"
+  }
+}
